@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário Google</title>
+    <style>
+        /* Estilo para tornar a página toda preta */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para adicionar raios amarelos pairando no monitor */
+        .raios-amarelos {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background-image: 
+                radial-gradient(30px 30px at 15% 15%, yellow 20%, transparent 70%),
+                radial-gradient(30px 30px at 85% 15%, yellow 20%, transparent 70%);
+            animation: raios-amarelos-anim 5s linear infinite alternate;
+        }
+
+        @keyframes raios-amarelos-anim {
+            0% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+        }
+
+        /* Estilo para o conteúdo do formulário */
+        .conteudo-formulario {
+            padding: 20px;
+        }
+
+        /* Estilo para a imagem do Canva */
+        .imagem-canva {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 141.4286%;
+            padding-bottom: 0;
+            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+            margin-top: 1.6em;
+            margin-bottom: 0.9em;
+            overflow: hidden;
+            border-radius: 8px;
+            will-change: transform;
+        }
+
+        .imagem-canva iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Raios amarelos pairando -->
+    <div class="raios-amarelos"></div>
+
+    <!-- Imagem do Canva -->
+    <div class="imagem-canva">
+        <iframe loading="lazy" src="https://www.canva.com/design/DAGBlgCQ9Dc/KYBMNZMMe1d3kxf6VEGFhg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+    </div>
+    <a href="https://www.canva.com/design/DAGBlgCQ9Dc/KYBMNZMMe1d3kxf6VEGFhg/view?utm_content=DAGBlgCQ9Dc&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Design</a> de Luiz Cleylton
+
+    <!-- Conteúdo do formulário -->
+    <div class="conteudo-formulario">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfvApTZhjZ2CKPj4QiUfFAWv0Q8Zs1Zsaqq-kbgM6L5M2hRaA/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </div>
+
+</body>
+</html>
